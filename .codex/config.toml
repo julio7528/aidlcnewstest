@@ -1,0 +1,16 @@
+# Project-level Codex configuration for this project.
+# These settings load only when the project is trusted.
+
+approval_policy = "never"
+default_permissions = "projeto-apenas"
+
+[permissions.projeto-apenas]
+description = 'Sandboxed local commands can access C:\dev\projeto and minimum runtime paths.'
+
+[permissions.projeto-apenas.filesystem]
+# Deny filesystem access by default. The minimum runtime paths remain read-only
+# so Codex can run common tools; the project directory is the only writable root.
+":root" = "read"
+":minimal" = "read"
+'C:\dev\projeto' = "write"
+

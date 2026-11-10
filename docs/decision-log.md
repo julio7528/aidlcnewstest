@@ -1,0 +1,111 @@
+# Decision Log
+
+This file will record project-related requests given to Codex, the decisions
+made in response, and their outcomes.
+
+Recording begins when the user starts configuring the project. Until then,
+this file remains explanatory and contains no request entries.
+
+## 2026-11-08 — Setup interview started
+
+- **Request:** The user asked to begin `Setup.md` and ask the setup questions.
+- **Outcome:** Began the interview at stage 1 (`.codex/hooks.json`). No lifecycle
+  event or handler was defined, so the hooks object remains empty.
+
+## 2026-11-08 — Preferences for later setup stages
+
+- **User statements:** Use GPT-6 Luna Max; use MCP connections already logged into
+  Codex when explicitly requested; no timeout or contract policy; execute a
+  requested specification through completion, following `INFOFRAMEWORK.md`.
+- **Outcome:** The model remains a user-selected setting; MCP use is manual, not
+  a hook. No hook event, matcher, or handler was defined. The specification
+  execution preference is being reconciled with the existing `AGENTS.md` rules
+  on selected steps, maximum concurrent subagents, and human-owned Operations.
+
+## 2026-11-08 — Project definition and setup answers received
+
+- **User statements:** The intended model is GPT-6 Luna Max, with the user
+  configuring it together with Codex. The project should have frontend, backend,
+  and QA agents; project skills should be based on those agents; there will be no
+  contracts. The project is a regional news search agent that searches the
+  internet for news and events by date and geographic scope (world, continent,
+  country, region, city, or neighborhood). The user is the only consulter and
+  will configure everything through the agent. No restrictions were identified.
+- **Outcome:** Captured for later stages. The config and custom-agent files have
+  since been handled; contracts and project context remain to be completed.
+
+## 2026-11-08 — Single-request execution preference
+
+- **User request:** When the user asks Codex to execute a task, one request should
+  authorize carrying it through without repeated approvals at each routine step.
+- **Outcome:** Recorded for the `AGENTS.md` setup stage. No active setting was
+  added to `.codex/config.toml` at first. The user then explicitly requested
+  `approval_policy = "never"` and access restricted to `C:\dev\projeto`; those
+  settings are now recorded in `.codex/config.toml`. The permission profile
+  denies filesystem access by default, permits minimum runtime paths read-only,
+  and permits read/write access to the project directory. This scope applies to
+  sandboxed local commands; browser, MCP, and connector tools use separate access
+  controls. Reconcile the task-level preference with the existing step-selection,
+  subagent-limit, approval, and human-owned Operations rules before changing
+  project guidance.
+
+## 2026-11-08 — Custom agent roles defined
+
+- **User decisions:** Use frontend, backend, and QA agents only during execution
+  of a requested specification. Derive their detailed tasks and output from the
+  user's request and selected spec. Use the normal Codex harness without
+  per-agent model, reasoning, or capability preferences.
+- **Outcome:** Added `.codex/agents/frontend.toml`, `.codex/agents/backend.toml`,
+  and `.codex/agents/qa.toml`, and documented their shared boundaries and handoff
+  in `.codex/agents/README.md`.
+
+## 2026-11-08 - Agent role details filled
+
+- **User authorization:** Codex may define and fill the stage 3 agent roles.
+- **Outcome:** Expanded frontend duties around geographic/date selection and
+  result presentation, backend duties around internet retrieval and filtering,
+  and QA duties around acceptance validation. Kept the stack, providers, APIs,
+  and persistence unspecified and left detailed tasks to the selected spec.
+
+## 2026-11-08 - Project workflow skills defined
+
+- **User decision:** Codex may define and fill the stage 4 skills based on the
+  frontend, backend, and QA agent roles.
+- **Outcome:** Added one workflow skill per role under `.agents/skills/`, with
+  ordered steps, completion criteria, and no assumed technology stack, provider,
+  API, or command set. Updated `.agents/skills/README.md` to index them.
+
+## 2026-11-08 - No project contracts
+
+- **User decision:** The project will not have contracts.
+- **Outcome:** Updated `contracts/README.md` to record that decision and to avoid
+  leaving TODOs for contract formats or schemas that the user has declined.
+
+## 2026-11-08 - Initial project context recorded
+
+- **User decisions:** Build an internet search agent for news and events by a
+  selected date and one of the geographic scopes world, continent, country,
+  region, city, or neighborhood. The user stated no project-specific
+  restrictions and identified consultation as the user activity.
+- **Outcome:** Filled the INCEPTION section of `docs/context.md` and recorded
+  unspecified source, date, geographic-matching, result-presentation, and
+  architecture details as open questions. Architecture remains for CONSTRUCTION.
+
+## 2026-11-09 - Setup guidance and architecture direction
+
+- **User decisions:** Use Python, Django, and LangGraph, developing the API
+  before the Django frontend. For each requested implementation step, finish
+  coding, test, and verify; fix failures and repeat until the checks pass, then
+  record the passing result here before proceeding. Keep the news/event agent's
+  behavior and output within the requested content and stated search parameters.
+  Project documentation belongs in `docs/` and follows the AI DLC workflow
+  after setup. The user will provide additional security guidance during
+  development. Explicitly requested work may proceed through implementation and
+  validation without repeated approval, while preserving the selected-step,
+  dependency, concurrency-limit, and human-owned Operations rules.
+- **Outcome:** Updated `AGENTS.md` and recorded the technology direction and
+  output guardrail in `docs/context.md`. The final setup consistency review
+  confirmed these decisions align with the project context and the human-owned
+  Operations boundary. Detailed architecture, security rules, exact commands,
+  and source entry points remain open until defined during project development.
+  No project contracts are planned.
