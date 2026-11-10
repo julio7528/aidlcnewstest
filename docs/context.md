@@ -1,4 +1,4 @@
-> **Status — Problem Definition approved; approval is limited to that item.** See the [approved problem definition](ai-dlc/inception/problem-definition.md). The main requirement, product objective, users, scope, and architecture remain provisional or pending separate review.
+> **Status — Problem Definition and INCEPTION requirements baseline approved.** See the [approved problem definition](ai-dlc/inception/problem-definition.md) and [requirements baseline](ai-dlc/inception/requirements.md). Users and Roles are documented separately in [their approved record](ai-dlc/inception/users-and-roles.md). The main requirement, product objective, final product scope, and architecture remain provisional or pending separate review.
 
 # Project Context
 
@@ -14,6 +14,7 @@ for implemented behavior and mark unknowns explicitly.
   difficult and requiring manual comparison and checks. See the [approved
   problem definition](ai-dlc/inception/problem-definition.md) for the
   authoritative statement.
+- **Requirements baseline:** The [approved INCEPTION requirements](ai-dlc/inception/requirements.md) documents confirmed decisions and nonfunctional requirements; open decisions remain open.
 - **Main requirement:** Search the internet for both news and events based on a
   user-selected geographic scope and date.
 - **Objective:** Let the consulter choose a scope from world, continent, country,

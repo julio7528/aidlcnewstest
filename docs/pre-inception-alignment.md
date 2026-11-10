@@ -7,6 +7,8 @@
 > INCEPTION sections as final.
 >
 > **Forward reference:** The approved problem definition is maintained in [the INCEPTION problem definition](ai-dlc/inception/problem-definition.md); this note remains a provisional record for other decisions and open questions.
+>
+> **Requirements reference:** The INCEPTION requirements baseline has since been approved and is maintained in [requirements.md](ai-dlc/inception/requirements.md); its listed open decisions remain unresolved.
 
 ## Confirmed conversational decisions
 

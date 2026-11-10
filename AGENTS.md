@@ -81,6 +81,7 @@ Obtain separate approval for destructive or difficult-to-reverse actions, costs,
 - **User request and decision record (after configuration begins):** `docs/decision-log.md`
 - **Project context and source implementation details:** `docs/context.md`
 - **Approved problem definition:** `docs/ai-dlc/inception/problem-definition.md` (authoritative for the problem only).
+- **Approved INCEPTION requirements:** `docs/ai-dlc/inception/requirements.md` (open decisions remain unresolved).
 - **Phase and step roadmap:** `docs/project-roadmap.md`
 - **Specification guidance and template:** `spec/README.md`, `spec/SPEC_TEMPLATE.md`
 - **Framework execution order:** `INFOFRAMEWORK.md`

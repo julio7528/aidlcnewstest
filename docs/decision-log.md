@@ -133,3 +133,18 @@ this file remains explanatory and contains no request entries.
   and a forward reference in the historical provisional alignment note.
   `INFOFRAMEWORK.md` and `Setup.md` remain unchanged because their sequence and
   instructions are consistent with this limited approval.
+
+## 2026-11-10 — INCEPTION requirements baseline approved
+
+- **User approval:** The user approved the proposed INCEPTION requirements
+  baseline, including its separately labeled nonfunctional requirements.
+- **Scope:** Documentation-only INCEPTION requirements. The approved Problem
+  Definition remains unchanged; the main requirement, product objective, final
+  MVP scope, architecture, implementation, and formal contracts remain outside
+  this approval. Open decisions remain unresolved. No CONSTRUCTION or
+  OPERATIONS work was authorized.
+- **Outcome:** Added `docs/ai-dlc/inception/requirements.md`, updated the AI DLC
+  and documentation references, linked the approved baseline from
+  `docs/context.md` and `AGENTS.md`, and added a forward reference to the
+  historical provisional alignment note. Existing Users and Roles changes
+  were preserved and remain documented separately.
