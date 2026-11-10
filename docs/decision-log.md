@@ -41,13 +41,7 @@ this file remains explanatory and contains no request entries.
 - **Outcome:** Recorded for the `AGENTS.md` setup stage. No active setting was
   added to `.codex/config.toml` at first. The user then explicitly requested
   `approval_policy = "never"` and access restricted to `C:\dev\projeto`; those
-  settings are now recorded in `.codex/config.toml`. The permission profile
-  denies filesystem access by default, permits minimum runtime paths read-only,
-  and permits read/write access to the project directory. This scope applies to
-  sandboxed local commands; browser, MCP, and connector tools use separate access
-  controls. Reconcile the task-level preference with the existing step-selection,
-  subagent-limit, approval, and human-owned Operations rules before changing
-  project guidance.
+  settings are now recorded in `.codex/config.toml`.
 
 ## 2026-11-08 — Custom agent roles defined
 
@@ -109,3 +103,18 @@ this file remains explanatory and contains no request entries.
   Operations boundary. Detailed architecture, security rules, exact commands,
   and source entry points remain open until defined during project development.
   No project contracts are planned.
+
+## 2026-11-10 — Pre-INCEPTION alignment request
+
+- **Request:** Align project guidance with the confirmed GeophNews decisions
+  while keeping this work before INCEPTION approval. Do not finalize the
+  existing `docs/context.md` definition, change source code or protected
+  settings, populate the roadmap or specifications, or alter the no-contracts
+  decision.
+- **Outcome:** Added `docs/pre-inception-alignment.md` to distinguish confirmed
+  conversational decisions from open questions; marked the existing context
+  draft as pending revalidation; updated the documentation index; and corrected
+  the current technology direction in `AGENTS.md` (LangGraph deferred, no RAG
+  initially). Historical entries above were preserved. Repository portability
+  and approval-policy discrepancies were identified and reported without
+  changing `.codex/config.toml` or `.codex/hooks.json`.

@@ -32,7 +32,7 @@
 8. Execute a specification only when the user requests it. The request must identify the steps to execute (or their count) and the maximum number of concurrently running subagents. If either value is missing, ask before changing source code.
 9. Execute only the selected eligible steps, preserve dependencies and order, and do not continue into another phase automatically. Treat the requested subagent count as a hard ceiling; `0` means no subagents. Parallelize only independent work.
 10. After requested CONSTRUCTION work, run relevant tests and validation, then report the selected steps, changes, observed results, and remaining limitations.
-11. Keep `docs/context.md` aligned with user-defined requirements and architecture, then reconcile implementation details against source files under `src/`. Mark unsupported details as unknown. Once project configuration has begun, record the request and outcome in `docs/decision-log.md`.
+11. Keep `docs/context.md`  aligned with user-defined requirements and architecture, then reconcile implementation details against source files under `src/`. Mark unsupported details as unknown. Once project configuration has begun, record the request and outcome in `docs/decision-log.md`.
 
 ## 4. Documentation Location
 
@@ -56,8 +56,8 @@
 - Prefer clear names and straightforward control flow.
 - Avoid unrelated refactors and unnecessary dependencies.
 - **Language:** Python.
-- **Selected technologies:** Django and LangGraph.
-- **Development order:** Build the API first, then the frontend with Django. Define detailed component responsibilities through the AI DLC workflow before implementation.
+- **Selected technologies:** Python, Django, Django Ninja, HTMX, MapLibre GL JS, PostgreSQL/PostGIS, and Pydantic AI orchestrating DeepSeek; Serper.dev is primary with optional Tavily fallback, Redis is optional, LangGraph is deferred unless future complexity justifies it, and RAG is not planned initially.
+- **Development order:** Build the API first, then the frontend with Django, HTMX, and MapLibre GL JS. Define detailed component responsibilities through the AI DLC workflow before implementation.
 - **TODO:** Define formatters, linters, naming rules, file organization, and API conventions as the project is developed.
 
 ## 6. Approval Criteria

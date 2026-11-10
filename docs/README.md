@@ -11,6 +11,7 @@ guidance, and operator guidance. The `templates/` directory is for prototypes.
 ## Project Records
 
 - `decision-log.md` — explains the request and decision record, which starts when project configuration begins.
-- `context.md` — project requirements and architecture, reconciled with implementation evidence in `../src/`.
+- `context.md` — the earlier provisional context draft, pending separate INCEPTION revalidation; its initial-definition sections are not approved final decisions.
+- `pre-inception-alignment.md` — **PROVISIONAL** record of confirmed conversational decisions and open INCEPTION questions.
 - `project-roadmap.md` - incremental phase, feature, and step outline written only as topic bullets.
 - `../spec/README.md` and `../spec/SPEC_TEMPLATE.md` - AI DLC stage mapping and phase specification workflow.

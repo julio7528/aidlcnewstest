@@ -1,3 +1,5 @@
+> **Status — provisional draft pending INCEPTION revalidation.** The existing problem, requirement, objective, primary-user, scope, and architecture text is not an approved final project definition; see [the provisional pre-INCEPTION alignment note](pre-inception-alignment.md) for current confirmed decisions and open questions.
+
 # Project Context
 
 This file is the initial source of truth for the project's problem, main

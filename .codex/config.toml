@@ -4,8 +4,6 @@
 approval_policy = "never"
 default_permissions = "projeto-apenas"
 
-[permissions.projeto-apenas]
-description = 'Sandboxed local commands can access C:\dev\projeto and minimum runtime paths.'
 
 [permissions.projeto-apenas.filesystem]
 # Deny filesystem access by default. The minimum runtime paths remain read-only
