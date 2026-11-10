@@ -60,7 +60,7 @@
 - **Development order:** Build the API first, then the frontend with Django, HTMX, and MapLibre GL JS. Define detailed component responsibilities through the AI DLC workflow before implementation.
 - **TODO:** Define formatters, linters, naming rules, file organization, and API conventions as the project is developed.
 
-## 6. Approval Criteria
+## 6. Approval Criteria 
 
 An explicit user request to execute selected work, as scoped by the prompt and any selected roadmap item or specification, authorizes the in-scope implementation, testing, and verification through completion. Do not request repeated approval for routine steps. Keep the work within the requested scope and follow the selected-step, dependency, and maximum-concurrent-agent requirements in this file.
 
