@@ -118,3 +118,18 @@ this file remains explanatory and contains no request entries.
   initially). Historical entries above were preserved. Repository portability
   and approval-policy discrepancies were identified and reported without
   changing `.codex/config.toml` or `.codex/hooks.json`.
+
+## 2026-11-10 — Problem Definition approved
+
+- **User approval:** Approved the Brazilian Portuguese problem statement
+  reproduced verbatim in `docs/ai-dlc/inception/problem-definition.md`.
+- **Scope:** Limited to the first INCEPTION activity and its documentation.
+  The main requirement, product objective, users, scope, and architecture remain
+  provisional or pending separate review. No specification or implementation
+  work was authorized.
+- **Outcome:** Created the AI DLC stage index and approved Problem Definition
+  artifact; updated only the Problem entry and approval status in
+  `docs/context.md`, the documentation indexes and reference in `AGENTS.md`,
+  and a forward reference in the historical provisional alignment note.
+  `INFOFRAMEWORK.md` and `Setup.md` remain unchanged because their sequence and
+  instructions are consistent with this limited approval.

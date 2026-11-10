@@ -1,4 +1,4 @@
-> **Status — provisional draft pending INCEPTION revalidation.** The existing problem, requirement, objective, primary-user, scope, and architecture text is not an approved final project definition; see [the provisional pre-INCEPTION alignment note](pre-inception-alignment.md) for current confirmed decisions and open questions.
+> **Status — Problem Definition approved; approval is limited to that item.** See the [approved problem definition](ai-dlc/inception/problem-definition.md). The main requirement, product objective, users, scope, and architecture remain provisional or pending separate review.
 
 # Project Context
 
@@ -9,9 +9,11 @@ for implemented behavior and mark unknowns explicitly.
 
 ## 1. INCEPTION - Requirements and Problem Definition
 
-- **Problem:** The project is intended to help a consulter find internet news
-  and events for a selected geographic scope and date. This is a restatement of
-  the user's project description.
+- **Problem:** Information about recent news and events is fragmented across
+  internet sources, making geographically relevant discovery and follow-up
+  difficult and requiring manual comparison and checks. See the [approved
+  problem definition](ai-dlc/inception/problem-definition.md) for the
+  authoritative statement.
 - **Main requirement:** Search the internet for both news and events based on a
   user-selected geographic scope and date.
 - **Objective:** Let the consulter choose a scope from world, continent, country,

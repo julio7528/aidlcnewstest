@@ -5,6 +5,8 @@
 > final problem definition, product scope, or detailed architecture. The older
 > draft in `context.md` remains pending revalidation; do not treat its
 > INCEPTION sections as final.
+>
+> **Forward reference:** The approved problem definition is maintained in [the INCEPTION problem definition](ai-dlc/inception/problem-definition.md); this note remains a provisional record for other decisions and open questions.
 
 ## Confirmed conversational decisions
 
