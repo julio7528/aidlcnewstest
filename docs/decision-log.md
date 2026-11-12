@@ -212,3 +212,13 @@ this file remains explanatory and contains no request entries.
   uncertainties, including runtime/deployment topology and exact UI-to-API
   invocation choices. Validation was limited to documentation links, content
   consistency and `git diff --check`; no tests were run.
+
+## 2026-11-12 — Roadmap v2 approved
+
+- **Owner approval:** Approved the 15-phase roadmap, with UX/UI information
+  architecture and separate screen-design approval before dependent interface
+  implementation.
+- **Outcome:** Replaced the roadmap placeholder with the ordered Phase 01–15
+  feature and step outline. This was documentation-only; no specification,
+  design artifact, source code, test, migration, deployment, or Operations task
+  was created or executed.
