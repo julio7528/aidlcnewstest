@@ -1,6 +1,6 @@
 # Product Objective — GeophNews
 
-> **APPROVED — limited to the Product Objective only.** This approval does not approve users or roles, full product scope, architecture, roadmap, specifications, implementation, or Operations decisions; these remain subject to their applicable activities and approvals.
+> **APPROVED — Product Objective.** Users and roles and MVP scope are approved separately in [Users and Roles](users-and-roles.md) and [MVP Scope](mvp-scope.md). Architecture, roadmap, specifications, implementation, and Operations decisions remain outside this approval.
 
 ## Objetivo primário
 
@@ -22,19 +22,19 @@ Facilitar a descoberta, em uma experiência unificada, de notícias cuja publica
 
 ### NEWS
 
-NEWS apresenta notícias cuja **data de publicação original verificável** está dentro das 24 horas imediatamente anteriores à consulta. A relevância geográfica pode decorrer de a notícia ocorrer na geografia selecionada ou de seu impacto regional ser diretamente verificável. A experiência deve permitir categorias predefinidas — incluindo “Todos”, conforme o alinhamento registrado — e busca por tema livre.
+NEWS apresenta notícias cuja **data de publicação original verificável** está dentro das 24 horas imediatamente anteriores à consulta. A relevância geográfica pode decorrer de a notícia ocorrer na geografia selecionada ou de seu impacto regional ser diretamente verificável. A experiência oferece as categorias iniciais aprovadas e All/Todos; quando uma categoria específica é selecionada, o tema livre a refina, e com All/Todos o tema busca entre categorias. A interface e o conteúdo conciso podem ser apresentados em pt-BR ou en-US.
 
-O usuário pode solicitar 5, 10, 15 ou 20 itens. A seleção deve ser ordenada por relevância, evitar duplicações e conter apenas notícias verificadas. Cada item deve apresentar título fundamentado nas evidências da fonte, chamada de aproximadamente duas linhas, atribuição e URL original. Se não houver itens verificados suficientes, a quantidade exibida pode ser menor que a solicitada.
+O usuário pode solicitar 5, 10, 15 ou 20 itens, com padrão 10. A seleção deve ser ordenada por relevância, evitar duplicações e conter apenas notícias verificadas. Cada item deve apresentar título fundamentado nas evidências da fonte, teaser de aproximadamente duas linhas, descrição curta distinta, atribuição e URL original verificado. Se não houver itens verificados suficientes, a quantidade exibida pode ser menor que a solicitada e a insuficiência deve ser informada.
 
 ### EVENT AGENDA
 
 EVENT AGENDA apresenta eventos públicos **em andamento ou futuros** dentro de um intervalo de datas escolhido obrigatoriamente pelo usuário. O evento deve estar geograficamente ligado ao local onde acontece. A agenda abrange eventos anunciados publicamente, gratuitos ou pagos, inclusive por organizadores ou terceiros quando o anúncio for crível.
 
-A experiência deve permitir categorias predefinidas e busca por tema livre. O usuário pode solicitar até 5, 10, 15 ou 20 itens e ordená-los por data — opção padrão — ou por relevância. Cada item deve apresentar identidade do evento, data e horário quando disponíveis, local efetivo, descrição breve e fonte original.
+A experiência oferece as categorias iniciais aprovadas e All/Todos, combinadas com o tema livre segundo a regra de interseção/refinamento descrita acima. A interface e o conteúdo conciso podem ser apresentados em pt-BR ou en-US, embora fontes públicas em qualquer idioma possam ser consideradas. O usuário seleciona obrigatoriamente datas inicial e final inclusivas, sem intervalo pré-preenchido, e pode solicitar 5, 10, 15 ou 20 itens, com padrão 10. A ordenação padrão é cronológica crescente por início do evento, com opção por relevância. Eventos físicos e híbridos exigem local físico verificado na área; eventos totalmente online só se qualificam no escopo WORLD. Cada item deve apresentar identidade do evento, data e horário verificados quando disponíveis, local efetivo, descrição breve e fonte original.
 
 ## Indicadores candidatos para validação futura
 
-Os indicadores abaixo são propostas para orientar validações posteriores. Não constituem critérios aprovados nem definem metas numéricas.
+Os indicadores abaixo orientam validações futuras e não definem metas adicionais. A meta inicial de desempenho aprovada está separada em [RNF-003](requirements.md) e ainda não foi medida.
 
 - **Correspondência geográfica:** para itens avaliados, é possível verificar a relação com a geografia escolhida — ocorrência no local ou impacto regional diretamente verificável para NEWS; local de realização para EVENT AGENDA.
 - **Correspondência temporal:** a publicação original de cada notícia avaliada pode ser confirmada dentro da janela móvel de 24 horas; eventos avaliados podem ser confirmados como em andamento ou futuros e compatíveis com o intervalo informado.
@@ -43,29 +43,20 @@ Os indicadores abaixo são propostas para orientar validações posteriores. Nã
 - **Integridade dos resultados:** duplicações relevantes são consolidadas, e resultados sem sustentação verificável não são inventados para preencher a quantidade solicitada.
 - **Utilidade para consulta:** em avaliação futura, usuários conseguem compreender os dados apresentados, distinguir notícias de eventos e abrir suas fontes para conferir detalhes.
 
-A forma de avaliação, os critérios de aceitação e eventuais metas quantitativas ainda precisam ser definidos e aprovados.
+Os critérios de aceite dos requisitos aprovados constam em [Requirements](requirements.md). Os indicadores desta seção não substituem esses critérios.
 
-## Premissas e questões em aberto
+## Premissas e resoluções posteriores
 
 ### Premissas de partida desta proposta
 
 - NEWS e EVENT AGENDA são experiências igualmente importantes na direção de produto informada.
 - A exploração geográfica segue a hierarquia mundo > continente > país > estado/região > cidade > bairro, e o usuário pode parar em qualquer nível.
-- As opções 5, 10, 15 e 20 são quantidades que o usuário pode solicitar; não são metas de desempenho.
+- As opções 5, 10, 15 e 20 são limites máximos de resultados, com padrão 10; não são metas de desempenho.
 - O intervalo de 24 horas de NEWS não define a regra temporal da EVENT AGENDA.
 - Os indicadores acima são candidatos para validação futura, não métricas já aprovadas.
 
-### Questões que requerem confirmação do responsável
-
-- Quais categorias serão oferecidas em cada experiência, qual será o comportamento de “Todos” e como categorias e busca por tema livre poderão ser combinadas.
-- Quais idiomas, mercados e fontes públicas deverão ser cobertos.
-- Quais referências geográficas definirão estados/regiões, cidades, bairros e cobertura de sub-regiões.
-- Qual nível de evidência será suficiente para verificar fontes, fatos, horários de publicação, relevância geográfica e anúncios de eventos.
-- Como equilibrar relevância e diversidade geográfica, quais duplicações devem ser consolidadas e quais critérios de confiabilidade e ordenação serão aceitos.
-- Como interpretar datas de eventos, limites do intervalo, fusos horários, ocorrências recorrentes e a diferença entre a data do evento e a data de seu anúncio.
-- Quais usuários ou papéis devem ser considerados e quais serão os limites e exclusões do MVP.
-- Quais indicadores serão adotados, como serão validados e se haverá metas quantitativas.
+As decisões de produto antes listadas como questões em aberto foram aprovadas em 2026-11-10 e estão rastreadas no [registro OD-01 a OD-14](open-decisions.md). Limites e referências geográficas sem verificação confiável, datas sem horário/duração e horários locais ambíguos permanecem ressalvas de validação, não decisões de produto em aberto. Métodos, fontes técnicas, pesos e heurísticas são definidos em CONSTRUCTION.
 
 ## Limite desta atividade
 
-Este documento aprova somente o Product Objective da etapa INCEPTION. Não define os usuários ou o escopo completo do produto; esses itens permanecem para atividades posteriores. Também não aprova arquitetura, roadmap, especificações ou código, que dependem das respectivas etapas e aprovações. OPERATIONS — implantação, monitoramento e evolução — permanece sob responsabilidade humana.
+Este documento aprova somente o Product Objective da etapa INCEPTION. Os usuários e papéis e o escopo do MVP são mantidos nos documentos aprovados vinculados acima. Este documento não aprova arquitetura, roadmap, especificações ou código, que dependem das respectivas etapas e aprovações. OPERATIONS — implantação, monitoramento e evolução — permanece sob responsabilidade humana.

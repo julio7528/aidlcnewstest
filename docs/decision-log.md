@@ -148,3 +148,35 @@ this file remains explanatory and contains no request entries.
   `docs/context.md` and `AGENTS.md`, and added a forward reference to the
   historical provisional alignment note. Existing Users and Roles changes
   were preserved and remain documented separately.
+
+## 2026-11-11 — INCEPTION decisions reconciled
+
+- **Owner approval:** On 2026-11-10, the project owner approved eight decision
+  sets resolving the previously indexed OD-01 through OD-14, together with the
+  MVP scope and DeepSeek as the primary LLM.
+- **Scope:** Documentation-only synchronization and validation for INCEPTION.
+  The approved Problem Definition remains unchanged. No source code, tests,
+  roadmap, specifications, contracts, architecture, CONSTRUCTION, or OPERATIONS
+  work was authorized or performed. The separately formulated main requirement
+  and detailed architecture remain unapproved; Operations remains human-owned.
+- **Outcome:** Created `docs/ai-dlc/inception/mvp-scope.md` and
+  `docs/ai-dlc/inception/open-decisions.md`; reconciled the approved requirements,
+  Product Objective, Users and Roles, and canonical context; corrected current
+  status summaries and references in the documentation indexes and `AGENTS.md`;
+  and added a forward pointer to the historical provisional alignment note.
+  The local Supabase PostgreSQL development environment and planned technical
+  direction are documented without approving architecture. Validation found no
+  broken relative Markdown links, preserved the prior RF/RNF identifiers, and
+  passed `git diff --check`.
+
+## 2026-11-11 — Main requirement RP-01 approved
+
+- **User approval:** Approved the separately formulated main requirement RP-01
+  exactly as presented in the conversation.
+- **Scope:** Documentation-only approval of the main INCEPTION requirement.
+  This completes the remaining INCEPTION approval; detailed architecture and
+  implementation remain for CONSTRUCTION, and OPERATIONS remains human-owned.
+- **Outcome:** Recorded the approved requirement in `docs/context.md` and
+  reconciled the requirements baseline, Problem Definition approval boundary,
+  OD-14, and documentation indexes. No source code, roadmap, specifications,
+  architecture, CONSTRUCTION, or OPERATIONS work was performed.

@@ -1,6 +1,6 @@
 # Problem Definition
 
-> **Status: APPROVED — limited to the Problem Definition only.** This approval does not approve the main requirement, product objective, users or roles, product scope, or architecture; those remain provisional or pending separate review.
+> **Status: APPROVED — limited to the Problem Definition only.** This approval is specific to the problem statement. The main requirement, product objective, users and roles, and product scope have separate approval records; architecture remains for CONSTRUCTION.
 
 ## Context
 

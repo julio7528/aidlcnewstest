@@ -8,7 +8,7 @@
 >
 > **Forward reference:** The approved problem definition is maintained in [the INCEPTION problem definition](ai-dlc/inception/problem-definition.md); this note remains a provisional record for other decisions and open questions.
 >
-> **Requirements reference:** The INCEPTION requirements baseline has since been approved and is maintained in [requirements.md](ai-dlc/inception/requirements.md); its listed open decisions remain unresolved.
+> **Requirements reference:** The INCEPTION requirements baseline has since been approved and is maintained in [requirements.md](ai-dlc/inception/requirements.md). The owner-approved MVP scope is maintained in [mvp-scope.md](ai-dlc/inception/mvp-scope.md), with OD-01 through OD-14 reconciled in the [decision resolution register](ai-dlc/inception/open-decisions.md). The open-question lists below are retained as historical content; they are not current requirements. Technical methods remain for CONSTRUCTION.
 
 ## Confirmed conversational decisions
 
