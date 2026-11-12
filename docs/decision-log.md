@@ -180,3 +180,35 @@ this file remains explanatory and contains no request entries.
   reconciled the requirements baseline, Problem Definition approval boundary,
   OD-14, and documentation indexes. No source code, roadmap, specifications,
   architecture, CONSTRUCTION, or OPERATIONS work was performed.
+
+## 2026-11-12 — CONSTRUCTION architecture defined
+
+- **Owner decisions:** Approved the 11 explicit architecture choices in
+  `docs/ai-dlc/architecture/architecture.md`: (1) modular monolith with the
+  critical API-first boundary and a separate API-consuming Django Web/UI layer;
+  (2) Supabase Auth with backend application authorization and secure manual
+  first-Administrator provisioning; (3) Supabase-managed PostgreSQL, Django ORM
+  and PostGIS as needed; (4) MapLibre with open, verifiable geographic data and
+  deferred licensing/source research; (5) Serper.dev then Tavily through a
+  provider abstraction; (6) deterministic eligibility/verification plus
+  evidence-grounded Pydantic AI/DeepSeek, without LangGraph or RAG; (7) durable
+  asynchronous jobs on PostgreSQL with worker, idempotency, retry, transition
+  and cancellation boundaries; (8) ten-minute language/filter-isolated cache
+  with current eligibility and authorization checks and correct model metering;
+  (9) Django Templates/HTMX/MapLibre UI consuming the API securely; (10)
+  PostgreSQL audit and separate provider/LLM usage metering with the approved
+  administration boundary; and (11) layered pytest/Django validation including
+  the NEWS and EVENT AGENDA p95 ≤120-second validation target under the approved
+  normal test profile.
+- **Scope:** Documentation-only architecture definition. Approved INCEPTION
+  documents, RP-01, product semantics, no-contracts policy and human-owned
+  OPERATIONS remain unchanged. No source code, tests, schemas, migrations,
+  roadmap steps, specifications, provider calls, deployment or operations work
+  was performed.
+- **Outcome:** Added the architecture record under
+  `docs/ai-dlc/architecture/`; updated its CONSTRUCTION and navigation
+  references in `docs/context.md`, `docs/ai-dlc/README.md`, `docs/README.md` and
+  `AGENTS.md`. Recorded approved boundaries separately from technical
+  uncertainties, including runtime/deployment topology and exact UI-to-API
+  invocation choices. Validation was limited to documentation links, content
+  consistency and `git diff --check`; no tests were run.

@@ -1,4 +1,4 @@
-> **Status — INCEPTION approvals: COMPLETE.** Problem Definition, the separately formulated main requirement RP-01, Product Objective, Users and Roles, Requirements, and MVP Scope are approved in their respective records. See the [decision resolution register](ai-dlc/inception/open-decisions.md) and [decision log](decision-log.md). Architecture and implementation are **not approved** and remain for CONSTRUCTION; OPERATIONS is human-owned.
+> **Status — INCEPTION approvals: COMPLETE; CONSTRUCTION architecture: APPROVED.** Problem Definition, the separately formulated main requirement RP-01, Product Objective, Users and Roles, Requirements, and MVP Scope are approved in their respective records. See the [decision resolution register](ai-dlc/inception/open-decisions.md), [approved architecture](ai-dlc/architecture/architecture.md), and [decision log](decision-log.md). Implementation remains pending a separate request; OPERATIONS is human-owned.
 
 # Project Context
 
@@ -22,13 +22,16 @@ for implemented behavior and mark unknowns explicitly.
 
 ## 2. CONSTRUCTION - Architecture
 
-- **Architecture status:** NOT APPROVED. The documented stack and development order are planned technical direction only; detailed architecture and responsibilities remain for CONSTRUCTION.
-- **System overview:** Develop the API first, then the frontend with Django.
-- **Entry points:** TODO
-- **Major components and responsibilities:** TODO
-- **Data flow:** TODO
-- **External dependencies and integrations:** TODO
-- **Planned technical direction (not approved architecture):** Python, Django, Django Ninja, HTMX, MapLibre GL JS, PostgreSQL/PostGIS, Pydantic AI with DeepSeek, Serper.dev primary with Tavily fallback, optional Redis, and API before frontend. Supabase PostgreSQL is the local MVP development environment. LangGraph is deferred; RAG is not planned for the MVP. Vercel hosting is a possible later human-owned OPERATIONS consideration, not a deployment authorization.
+- **Architecture status:** APPROVED at the decision level on 2026-11-12. The [CONSTRUCTION architecture record](ai-dlc/architecture/architecture.md) is authoritative for approved boundaries and explicitly undecided implementation choices; approved INCEPTION semantics remain unchanged.
+- **System overview:** A Django modular monolith exposes a Django Ninja API first and a distinct Django Templates/HTMX/MapLibre Web/UI layer afterward. The UI consumes the API; API owns business logic, validation, and authorization. These are logical boundaries and do not require microservices, separate repositories, or separate deployments.
+- **Major responsibilities:** Accounts/authentication and authorization; geography; provider-backed discovery/search; independent NEWS and EVENT AGENDA rules; evidence/source verification; Pydantic AI/DeepSeek editorial assistance; PostgreSQL-backed asynchronous jobs; PostgreSQL cache; and usage/audit metering.
+- **Data flow:** Authenticated UI request → API token and current account/module authorization → durable PostgreSQL job → worker discovery (Serper.dev then Tavily fallback), deterministic eligibility/evidence checks, and evidence-grounded DeepSeek generation → persisted results/provenance/usage → authorized API polling and UI presentation.
+- **Data and identity ownership:** Supabase Auth owns credentials and identity/session issuance. Supabase-managed PostgreSQL is shared application persistence through Django ORM, with PostGIS where needed. Application mappings, roles/permissions, jobs/results/evidence/cache and usage/audit are not duplicate Auth identities or passwords.
+- **Runtime boundary:** A worker runs independently of the HTTP request lifecycle using a durable PostgreSQL job model. Exact runtime/deployment topology and UI-to-API transport remain implementation choices; no microservices or hosting topology is mandated.
+- **External dependencies:** Supabase Auth/PostgreSQL, Serper.dev with Tavily fallback, Pydantic AI with DeepSeek, and open verifiable MapLibre-compatible geographic sources. Dataset/geocoder/licensing research and detailed provider mechanics remain technical follow-ups.
+- **Cache and controls:** Search/results cache TTL is 10 minutes with language/filter isolation, current authorization, and temporal/geographic revalidation before display. Deterministic checks govern eligibility and attribution; LLM output must remain grounded in verified evidence. LangGraph and RAG are not in the MVP.
+- **Development order:** API → backend validations, worker and integrations → API-consuming Django Web/UI. No implementation is authorized by this documentation update.
+- **Operations:** Initial runtime is local with Supabase PostgreSQL. Vercel is only a possible future human-owned OPERATIONS consideration; no deployment, monitoring, or operations work is authorized here.
 
 ## Source Implementation Context
 

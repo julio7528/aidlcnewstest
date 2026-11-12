@@ -80,6 +80,7 @@ Obtain separate approval for destructive or difficult-to-reverse actions, costs,
 - **Documentation index:** `docs/README.md`
 - **User request and decision record (after configuration begins):** `docs/decision-log.md`
 - **Project context and source implementation details:** `docs/context.md`
+- **Approved CONSTRUCTION architecture and technical follow-ups:** `docs/ai-dlc/architecture/architecture.md` (summarized in `docs/context.md`).
 - **Approved problem definition:** `docs/ai-dlc/inception/problem-definition.md` (authoritative for the problem only).
 - **Approved Product Objective:** `docs/ai-dlc/inception/product-objective.md`.
 - **Approved users and roles:** `docs/ai-dlc/inception/users-and-roles.md`.

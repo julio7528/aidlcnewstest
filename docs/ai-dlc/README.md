@@ -13,11 +13,11 @@ Requirements, objectives, and problem definition.
 - [MVP Scope](inception/mvp-scope.md) — approved MVP boundaries and exclusions.
 - [Decision Resolution Register](inception/open-decisions.md) — disposition of OD-01 through OD-14; product decisions are resolved and implementation choices are deferred to CONSTRUCTION.
 
-INCEPTION approvals are complete, including the separately formulated main requirement RP-01 recorded in [Project Context](../context.md) and [Decision Log](../decision-log.md). Architecture and implementation remain unapproved and belong to CONSTRUCTION.
+INCEPTION approvals are complete, including the separately formulated main requirement RP-01 recorded in [Project Context](../context.md) and [Decision Log](../decision-log.md). The architecture boundaries are approved in [Architecture](architecture/architecture.md); implementation remains pending a separate user request in CONSTRUCTION.
 
 ## CONSTRUCTION
 
-Architecture, implementation, tests, and validation. Architecture and implementation decisions remain pending their applicable review and authorization.
+Architecture, implementation, tests, and validation. The owner-approved architecture boundaries are recorded in [Architecture](architecture/architecture.md). Implementation, tests and feature execution remain pending a separate user request; OPERATIONS is human-owned.
 
 ## OPERATIONS
 
