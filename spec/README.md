@@ -1,12 +1,19 @@
 # Phase Specifications
 
 - Create one specification file for each phase listed in `../docs/project-roadmap.md`.
+- Exception for Phase 01: steps 01.01 and 01.02 have separate step-scoped specifications, as requested by the owner. Steps 01.03–01.06 remain for a later separate specification.
 - Name phase files `phase-<number>-<short-name>.md`.
 - Define each roadmap phase as ordered, numbered steps.
 - Give each step a scope, dependencies, acceptance criteria, and validation expectations.
 - Use `SPEC_TEMPLATE.md` as the starting structure.
 - Create or update the roadmap before writing a phase specification.
 - Execute only a specification selected by the user.
+
+## Current Phase 01 Specifications
+
+- [Step 01.01 — Initial visual identity](phase-01-ux-ui.md) — completed.
+- [Step 01.02 — Screen inventory](phase-01-screen-inventory.md) — ready for owner-guided execution.
+- Steps 01.03–01.06 are not specified yet.
 
 ## AI DLC Stages
 

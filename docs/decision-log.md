@@ -222,3 +222,249 @@ this file remains explanatory and contains no request entries.
   feature and step outline. This was documentation-only; no specification,
   design artifact, source code, test, migration, deployment, or Operations task
   was created or executed.
+
+## 2026-11-16 — Initial visual identity added to Phase 01
+
+- **User request:** Add an initial visual identity feature covering colors,
+  images, logos, fonts, typography, and icons.
+- **Outcome:** Added the visual identity package as the first Phase 01 feature,
+  limited to reusable design artifacts for owner review. Renumbered the
+  remaining Phase 01 steps to preserve their order. No specification, source
+  code, or other phase was changed.
+
+## 2026-11-16 — Phase 01 specification and visual identity documentation
+
+- **Request:** Specify the initial visual identity work, with the owner deciding
+  each point, and establish a dedicated documentation folder.
+- **Outcome:** Created the Phase 01 specification with a detailed, user-led
+  decision process for step 01.01 and an indexed visual identity folder. The
+  remaining phase steps are outlined for later detailing. Execution and visual
+  decisions remain pending.
+
+## 2026-11-16 — Visual identity specification scope corrected
+
+- **Request:** Restrict the existing specification to step 01.01; document the
+  remaining Phase 01 steps separately.
+- **Outcome:** Removed the other steps from the specification and recorded the
+  Phase 01 exception to the one-specification-per-phase convention. No visual
+  identity decisions or execution were performed.
+
+## 2026-11-16 — Brand direction selected
+
+- **User decision:** GeophNews should feel journalistic and geographic, with
+  balance, sobriety, and connection between places.
+- **Outcome:** Recorded this as the approved brand direction in
+  `docs/visual-identity/brand-direction.md`. Other visual identity decisions
+  remain open for the user.
+
+## 2026-11-16 — Color palette base selected
+
+- **User decision:** Selected option C, Contemporary Newsroom, as the visual
+  identity palette base.
+- **Outcome:** Recorded its four hex colors in
+  `docs/visual-identity/color-palette.md`. Functional color roles, combinations,
+  and contrast checks remain to be decided or validated.
+
+## 2026-11-16 — Color roles assigned
+
+- **User preferences:** Use a light interface with `#F3F5F6` as the base and
+  `#252E3B` for text/dark emphasis; reserve `#426D94` for geography; use
+  `#A24F4F` as a brand accent and separate semantic colors for system states.
+- **Outcome:** Documented the color roles and calculated contrast ratios for
+  the planned flat-color combinations. Map-tile combinations require review in
+  their rendered context; system-state color values remain open.
+
+## 2026-11-17 — Mixed image direction and prompt set
+
+- **User decision/request:** Use a mix of documentary photography and
+  cartographic illustration; prepare ten image-generation prompts for the site
+  and create a place in the project for the generated images.
+- **Outcome:** Recorded the image direction and created ten standalone prompts
+  in `docs/visual-identity/image-prompts.md`. Created the empty destination
+  folder `docs/visual-identity/generated-images/`.
+
+## 2026-11-17 — Logo formats and prompt set
+
+- **User decision/request:** Define a long `GeophNews` logo and a short `GN`
+  logo, each in light- and dark-theme versions, matching the two provided logo
+  sketches, with transparent PNG output. Put four generation prompts in
+  `docs/visual-identity/image-prompts.md`.
+- **Outcome:** Recorded the approved formats and reference images in
+  `docs/visual-identity/logo-direction.md`; added four standalone prompts that
+  apply the approved palette and transparent-background requirements. No logo
+  artwork was generated in this documentation step.
+
+## 2026-11-17 — Logo files generated and typography exploration started
+
+- **User update/request:** The four logo files are complete; prepare prompts to
+  compare the three proposed typographic directions before choosing one.
+- **Outcome:** Confirmed the four PNG files in `generated-images/logos/`, updated
+  the logo status, and added three comparable typography specimen prompts to
+  `docs/visual-identity/image-prompts.md`. Typography remains undecided pending
+  the user's review of generated examples.
+
+## 2026-11-17 — Editorial typography direction selected
+
+- **User decision:** Selected Direction 1 — Editorial, pairing serif headlines
+  with a neutral sans serif for subtitles, body text, labels, and interface.
+- **Outcome:** Recorded the direction in
+  `docs/visual-identity/typography-direction.md`. Specific font families,
+  weights, hierarchy, fallbacks, and licensing remain to be decided.
+
+## 2026-11-17 — Typeface comparison prompts prepared
+
+- **User request:** List the typography decisions still needed and prepare
+  prompts to compare specific family pairings; the user will generate and
+  review the examples before choosing.
+- **Outcome:** Added a decision checklist and three comparable pairing prompts
+  to `docs/visual-identity/prompts.md`. No typeface family was selected.
+
+## 2026-11-17 — Typeface families selected
+
+- **User decision:** Selected Option A: Source Serif 4 for headings and Source
+  Sans 3 for body text and interface.
+- **Outcome:** Recorded the family pairing in
+  `docs/visual-identity/typography-direction.md`. Weights, hierarchy, fallbacks,
+  and application details remain open.
+
+## 2026-11-17 — Editorial typography decisions completed
+
+- **User decisions:** Use Source Serif 4 for all page, section, news and event
+  titles; H1 700 and H2/card titles 600. Use Source Sans 3 at 400 for body,
+  500 for navigation and 600 for buttons. Italic is reserved for quotations;
+  letter spacing stays standard. Select the comfortable scale; approve both
+  fallback stacks; self-host WOFF2, load only used weights, and use
+  `font-display: swap`. Keep the same families and scale in pt-BR and en-US.
+- **Mobile sizing:** The supplied values “3236”, “2428” and “1822” were
+  interpreted as ranges 32–36, 24–28 and 18–22 px, respectively; the user
+  expects refinement in wireframes.
+- **Outcome:** Recorded the full typography system and verified the official
+  Google Fonts metadata for SIL OFL 1.1, Latin Extended coverage and weight
+  axes. Actual local WOFF2 binaries still require validation before use.
+
+## 2026-11-17 — Filled icon direction and crop sheet planned
+
+- **User decision/request:** Use filled icons. Have Codex choose sizes and uses,
+  write a prompt for a transparent sheet of equally sized icons, and create an
+  empty folder for the cropped files.
+- **Outcome:** Defined 24×24 px as the common UI size and 32×32 px for map
+  controls; added a 16-icon 4×4 sheet prompt and icon documentation. Created
+  `docs/visual-identity/generated-images/icons/` for the cropped PNGs.
+
+## 2026-11-17 — Cropped icon files received
+
+- **User update:** The icon files were created in
+  `docs/visual-identity/generated-images/icons/`.
+- **Outcome:** Confirmed 16 PNG files with transparency. Their cropped canvas
+  dimensions vary; recorded review and size normalization as pending. Original
+  files were left unchanged.
+
+## 2026-11-17 — Icon files named and normalized
+
+- **User request:** Review the icon crops, prepare standardized sizes, and
+  rename the assets semantically.
+- **Outcome:** Visually mapped and renamed 16 icons. Geographic selection and
+  map-control icons use transparent 32×32 px canvases; content and interface
+  icons use 24×24 px canvases. Preserved the original generated crops in
+  `docs/visual-identity/generated-images/icons/source-crops/`. Recorded the
+  filename-to-symbol mapping in `icon-direction.md`; user review remains open.
+
+## 2026-11-17 — Icon set approved
+
+- **User decision:** Approved the prepared GeophNews icon set.
+- **Outcome:** Recorded explicit approval in `icon-direction.md`; the icon
+  theme is closed, subject to the overall visual-identity package review.
+
+## 2026-11-17 — Semantic color, font, and wireframe review started
+
+- **User request:** Continue the visual-identity step with semantic colors and
+  contrast verification, WOFF2 validation, and review in wireframes.
+- **Outcome:** Recorded icon-set approval. Obtained four regular WOFF2 subset
+  files and their OFL licenses from Google Fonts; checked WOFF2 signatures,
+  family names, variable axes, and pt-BR accented glyph coverage. Recalculated
+  the approved palette contrast pairs and documented a semantic-color proposal
+  with two treatments and measured ratios. The semantic tokens, contrast
+  target, two typography details, and wireframe review remain open for owner
+  decisions.
+
+## 2026-11-17 — Semantic colors, typography checks, and angular wireframe revision
+
+- **User decisions:** Selected 1A–5A: apply WCAG 2.2 AA contrast targets; approve
+  the documented semantic color tokens; use the soft-background treatment;
+  enable automatic optical sizing for Source Serif 4; and use Source Serif 4
+  Italic for quotations. The user also requested square corners and stronger,
+  modern strokes after evaluating the open desktop and mobile wireframes.
+- **Evaluation:** The open drafts used rounded panels, fields, buttons, and image
+  crops, with low-opacity, thin outlines. That treatment did not match the
+  user's stated preference.
+- **Outcome:** Marked the semantic palette approved; validated the four regular
+  and two italic WOFF2 files, including signatures, family/axis metadata,
+  Portuguese glyph coverage, and preserved OFL licenses. Revised both wireframes
+  to remove rounded corners, use 2 px `#52606D` panel and field outlines, firm
+  1.5 px result and semantic-state borders, and a heavier brand navigation
+  marker. Updated the visual-identity index, wireframe notes, and step status.
+  The revised drafts remain open for the user's visual approval; the complete
+  visual-identity package is not yet approved.
+
+## 2026-11-17 — Wireframe outlines reduced
+
+- **User request:** Show the desktop and mobile SVGs with thin outlines instead
+  of the previously stronger borders.
+- **Outcome:** Kept the square-corner direction and reduced the panel, field,
+  result, and semantic-state outlines in both SVGs to 1 px. Reduced the desktop
+  header divider to 1 px and the red active-navigation markers to 2 px. Updated
+  the wireframe notes and status references. Visual approval remains pending.
+
+## 2026-11-17 — Desktop and mobile wireframes approved
+
+- **User approval:** Approved the desktop and mobile SVG wireframes in the
+  square-corner, thin-outline version.
+- **Outcome:** Marked the two wireframes approved in their README and updated
+  the identity index and Phase 01 step status. The complete visual-identity
+  package remains in progress because the four generated logo variants and ten
+  generated site images have not yet received explicit visual approval.
+
+## 2026-11-17 — Initial visual identity package approved
+
+- **User approval:** Confirmed that all four logo PNGs and all ten generated
+  site images are approved, following the previously approved desktop/mobile
+  wireframes, semantic colors, typography, and icon set.
+- **Final review:** Confirmed four transparent RGBA logo PNGs, ten WebP image
+  assets, 16 normalized transparent icon PNGs, six local WOFF2 files with OFL
+  licenses, valid wireframe SVGs, and documented flat-color contrast results.
+- **Outcome:** Added the image-asset inventory, recorded logo metadata and
+  approval, marked the visual-identity package and Phase 01 Step 01.01 complete,
+  and updated project documentation indexes. The external image-generation
+  provider and its usage terms were not supplied; this limitation is identified
+  in the asset documentation and does not change the user's visual approval.
+
+## 2026-11-17 — ChatGPT identified as visual-asset generator
+
+- **User clarification:** The external tool used to generate the logos and site
+  images was ChatGPT.
+- **Outcome:** Updated the asset documentation to identify ChatGPT as the
+  provider. The applicable usage terms were not reviewed as part of the visual
+  identity specification; reuse permissions remain unverified.
+
+## 2026-11-17 — Phase 01 Step 01.02 specification created
+
+- **User request:** Create a separate specification for defining the 14
+  principal screens, to be executed with the owner making decisions together
+  with Codex during the work.
+- **Outcome:** Created `spec/phase-01-screen-inventory.md`, restricted to
+  roadmap Step 01.02. It uses the roadmap's 14 candidate screens, an owner-led
+  sequential decision protocol, explicit approval checkpoints, scope boundaries
+  for Steps 01.03–01.05, and a future artifact path at
+  `docs/ux-ui/screen-inventory.md`. The specification is ready; execution has
+  not started.
+
+## 2026-11-17 — Phase 01 Step 01.02 execution started
+
+- **User request:** Begin the screen-inventory specification. Step 01.02 is the
+  selected step; the user set a maximum of two concurrent subagents.
+- **Execution approach:** Used no subagents, within the stated limit and in
+  keeping with the specification's owner-led sequential decision protocol.
+- **Outcome:** Created the draft inventory at `docs/ux-ui/screen-inventory.md`
+  with all 14 roadmap candidates and pending decision fields. S01 — public
+  home — is the first owner decision checkpoint; no screen has been approved
+  yet.
