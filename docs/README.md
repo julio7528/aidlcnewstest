@@ -21,9 +21,14 @@ guidance, and operator guidance. The `templates/` directory is for prototypes.
 
 ## Project Records
 
+- [Phase 01, Step 01.03 specification](<../spec/p01-St01_03-route-resource-map(Waiting).md>) — Step 01.02 is approved; execution is waiting for owner questionnaire responses.
+- [Phase 01, Step 01.04 specification](<../spec/p01-St01_04-screen-interactions(Backlog).md>) — Step 01.02 is approved; execution depends on Step 01.03 approval and a separate user request.
+- [Phase 01, Step 01.05 specification](<../spec/p01-St01_05-wireframes-navigation(Backlog).md>) — Step 01.02 is approved; execution depends on Steps 01.03–01.04 and a separate user request.
+- [Phase 01, Step 01.06 specification](<../spec/p01-St01_06-design-approval(Backlog).md>) — Step 01.02 is approved; execution depends on Steps 01.03–01.05 and a separate user request.
+
 - `visual-identity/README.md` — approved initial GeophNews visual identity package for Phase 01, Step 01.01; records assets, decisions, validation, and the remaining ChatGPT asset-terms review limitation.
-- `ux-ui/screen-inventory.md` — work-in-progress owner-guided inventory for the 14 principal screens in Phase 01, Step 01.02.
-- `../spec/phase-01-screen-inventory.md` — owner-guided specification for Phase 01, Step 01.02.
+- `ux-ui/screen-inventory.md` — consolidated inventory of 14 owner-approved IDs for Phase 01, Step 01.02: 11 standalone screens, S03/S04 grouped in S02, and S06 embedded in S07; final artifact approved.
+- [Step 01.02 specification](<../spec/p01-St01_02-screen-inventory(Done).md>) — owner-guided inventory; final artifact approved by the owner.
 
 - `decision-log.md` — explains the request and decision record, which starts when project configuration begins.
 - `context.md` — canonical project context; all INCEPTION approvals, including main requirement RP-01, are complete. Its CONSTRUCTION summary links to the approved architecture record.
@@ -37,5 +42,5 @@ Nota pessoal:
 2. CONSTRUCTION — definir a arquitetura; planejar fases no roadmap; criar uma especificação por fase; implementar os passos selecionados; testar e verificar. Se algo falhar, corrigir e repetir. Depois de aprovar cada passo, registrar o resultado e atualizar a documentação.
 3. OPERATIONS — implantar, monitorar e evoluir o sistema. Esta etapa é humana; o Codex não a executa.
 
-No seu projeto, a arquitetura e o roadmap já estão definidos, e a etapa 01.01 de identidade visual foi concluída. A etapa 01.02 está em execução assistida, com decisões tela por tela registradas em `ux-ui/screen-inventory.md`.
+No seu projeto, a arquitetura e o roadmap já estão definidos, e as etapas 01.01 e 01.02 foram concluídas. O proprietário confirmou em lote as 14 decisões individuais e aprovou o inventário consolidado em `ux-ui/screen-inventory.md`.
 ```

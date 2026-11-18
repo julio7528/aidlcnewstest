@@ -468,3 +468,52 @@ this file remains explanatory and contains no request entries.
   with all 14 roadmap candidates and pending decision fields. S01 — public
   home — is the first owner decision checkpoint; no screen has been approved
   yet.
+
+## 2026-11-17 — Phase 01 Step 01.03 specification prepared
+
+- **User request:** While Step 01.02 is still in progress, prepare the
+  spec-driven work for Step 01.03 from the roadmap and place it in the spec
+  directory, before executing that step.
+- **Outcome:** Created the route and resource map specification for Step 01.03,
+  covering navigation, route and access proposals, account-role/status/module
+  permission cases, and conceptual UI-to-API resource needs without formal API
+  contracts. Updated the specification and documentation indexes. Execution
+  has not started and depends on the owner's final approval of the Step 01.02
+  screen inventory.
+
+## 2026-11-17 — Decisões de inventário de telas aprovadas em lote
+
+- **Decisão do proprietário:** Aprovou explicitamente, em um único lote, as 14 escolhas do inventário: 1B, 2A, 3B, 4B, 5A, 6B, 7A, 8A, 9A, 10A, 11A, 12A, 13A e 14A. As confirmações não foram coletadas sequencialmente.
+- **Resultado:** Registradas as 14 decisões individuais como APPROVED, com onze telas autônomas (S01, S02, S05 e S07–S14), S03 e S04 agrupadas em S02 e S06 embutida em S07. O inventário consolidado aguarda a revisão e aprovação final do proprietário; a Etapa 01.02 permanece aberta.
+
+## 2026-11-17 — Especificação da Fase 01, Etapa 01.04 criada
+
+- **Solicitação do usuário:** Criar a especificação da Etapa 01.04 enquanto a execução de 01.02 e a preparação da especificação 01.03 ocorrem em paralelo.
+- **Resultado:** Criada `spec/phase-01-screen-interactions.md`, cobrindo rótulos pt-BR/en-US, padrões responsivos e acessíveis por teclado, componentes compartilhados, formulários, filtros e interações do mapa. A execução depende da aprovação final do inventário 01.02 e do mapa 01.03. Os índices de especificações e documentação foram atualizados; nenhuma etapa foi executada e nenhum código ou wireframe foi produzido.
+
+## 2026-11-17 — Especificação da Fase 01, Etapa 01.06 criada
+
+- **Solicitação do usuário:** Criar a especificação do Step 01.06 com base no roadmap enquanto as especificações dos Steps 01.02–01.05 são preparadas em paralelo; a execução será solicitada depois.
+- **Resultado:** Criada `spec/phase-01-design-approval.md` para consolidar os artefatos aprovados de 01.01–01.05 em um pacote rastreável, registrar a aprovação explícita dos designs detalhados e estabelecer o gate para as interfaces das Fases 10–14. Atualizados os índices de especificações e documentação. A execução não foi iniciada e depende da conclusão e aprovação das etapas 01.01–01.05; nenhum código ou artefato final de design foi produzido.
+
+## 2026-11-17 — Especificação da Fase 01, Etapa 01.05 criada
+
+- **Solicitação do usuário:** Criar a especificação do Step 01.05 com base no roadmap, em paralelo às especificações dos Steps 01.02–01.04; executar a etapa depois que a preparação das especificações terminar.
+- **Resultado:** Criada `spec/phase-01-wireframes-navigation.md` para produzir wireframes desktop e móveis e diagramas de navegação cobrindo loading, queued, running, partial, failed, cancelled, empty, cache-hit e session-expired. A execução depende da aprovação das etapas 01.02–01.04; os artefatos do Step 01.05 precisam de aprovação própria e a aprovação final dos designs detalhados permanece no Step 01.06. Atualizados os índices de especificações e documentação. A etapa não foi executada e nenhum wireframe foi produzido.
+
+## 2026-11-17 — Convenção de nomes e status das especificações
+
+- **Solicitação do usuário:** Incluir fase, etapa e estado atual no nome dos arquivos de especificação e documentar a regra em `spec/README.md` e `spec/SPEC_TEMPLATE.md`.
+- **Resultado:** Definido o padrão `p01-St01_06-design-approval(Backlog).md`, documentados os estados Backlog, Doing, Waiting e Done, renomeadas as seis especificações da Fase 01 e atualizados os índices e links ativos. Os estados registrados são 01.01 Done, 01.02 Waiting e 01.03–01.06 Backlog. Referências nos registros históricos foram preservadas; nenhuma nova etapa foi executada.
+
+## 2026-11-17 — Inventário da Etapa 01.02 aprovado
+
+- **Aprovação do proprietário:** Revisou e aprovou o inventário consolidado de S01–S14, mantendo a aprovação individual em lote registrada anteriormente.
+- **Resultado:** Marcada a revisão final do artefato como aprovada, atualizados o inventário e os índices para Done, e renomeada a especificação para `p01-St01_02-screen-inventory(Done).md`. A Etapa 01.02 está concluída; a execução da Etapa 01.03 não foi iniciada.
+
+## 2026-11-17 — Step 01.03 iniciado e aguardando decisões do proprietário
+
+- **Solicitação do usuário:** Iniciar a especificação de rotas e recursos, enviar um questionário completo e executar o mapa após o proprietário devolver as respostas.
+- **Execução:** Step 01.03 selecionado. A especificação foi renomeada de Backlog para Waiting porque a execução foi iniciada e está pausada aguardando decisões do proprietário. A dependência do Step 01.02 está aprovada.
+- **Parâmetro pendente:** máximo de subagentes simultâneos ainda não informado; o questionário solicita esse valor.
+- **Resultado parcial:** preparado o questionário de rotas candidatas, navegação, redirecionamentos, estados/permissões de acesso, recursos conceituais por experiência e decisões de destino. Nenhum mapa foi consolidado enquanto as respostas do proprietário estão pendentes.

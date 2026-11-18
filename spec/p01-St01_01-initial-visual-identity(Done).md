@@ -29,7 +29,7 @@ Para cada decisão, registrar o tema, alternativas ou referências consideradas,
 - **Dependências:** requisitos, escopo e arquitetura aprovados; escolhas do usuário para cada tema. A ordem dos temas pode ser ajustada com ele, preservando dependências entre escolhas.
 - **Critérios de aceite:** todos os temas acima têm decisões explícitas do usuário, documentação e exemplos suficientes para uso posterior; assets acordados e referências estão acessíveis a partir do índice; pendências e direitos de uso são identificados; combinações de cores destinadas a texto e controles têm contraste verificado segundo os requisitos aprovados; o usuário revisou e aprovou o pacote final. Nenhum design é apresentado como aprovado antes da decisão expressa.
 - **Validação:** revisar cobertura e rastreabilidade das decisões, abrir os links e inspecionar os assets, conferir os valores e combinações documentados e registrar resultados de contraste e limitações. Apresentar o pacote ao usuário para revisão e aprovação; corrigir e repetir as verificações após alterações relevantes. Registrar o resultado no log de decisões quando a etapa estiver concluída.
-- **Estado:** concluída em 2026-11-17 após aprovação do usuário do pacote visual,
+- **Status:** Done — concluída em 2026-11-17 após aprovação do usuário do pacote visual,
   incluindo os quatro logos PNG, as dez imagens geradas, os ícones e os
   wireframes desktop/mobile. A revisão final conferiu a presença e os metadados
   dos assets, os seis WOFF2 e suas licenças, os links da documentação e os

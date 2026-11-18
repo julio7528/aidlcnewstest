@@ -2,7 +2,7 @@
   - Feature — Initial visual identity
     - Step 01.01 — Create a reusable initial visual identity package covering the color palette, image direction and assets, logo concepts and variants, typeface selections and typographic hierarchy, and icon style/set for owner review.
   - Feature — Screen inventory and navigation
-    - Step 01.02 — Define the 14 principal screens: public home; login; signup; password recovery; awaiting admin approval; access denied/no module permission; consumer dashboard/geographic map; NEWS search/results; EVENT AGENDA search/results; admin dashboard; user list; user details/access permissions; aggregated AI usage report; per-user usage detail.
+    - Step 01.02 — Define 14 screen-inventory IDs/candidate experiences (not 14 independent pages): public home; login; signup; password recovery; awaiting admin approval; access denied/no module permission; consumer dashboard/geographic map; NEWS search/results; EVENT AGENDA search/results; admin dashboard; user list; user details/access permissions; aggregated AI usage report; per-user usage detail. Retain 11 standalone screens: signup and password recovery are grouped in login, and no-module permission is embedded in the consumer dashboard.
     - Step 01.03 — Map routes, links, redirects, public/authenticated boundaries, and screen-to-API resource/data needs by account role, status, and NEWS/EVENT AGENDA permissions, without defining formal API contracts.
   - Feature — Screen interactions and design artifacts
     - Step 01.04 — Specify pt-BR/en-US labels, responsive and keyboard-accessible patterns, shared components, forms, filters, and map interactions.
